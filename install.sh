@@ -27,7 +27,7 @@ sudo pear install pear.phpunit.de/phpcpd
 sudo pear install phpunit/PHP_CodeBrowser
 sudo pear install pear.phpunit.de/phploc
 sudo pear install phpdoc/phpDocumentor-alpha
-sudo pear install phpunit/PHPUnit
+sudo pear install --alldeps phpunit/PHPUnit
 
 sudo phpcs --config-set default_standard PSR2
 
@@ -54,7 +54,7 @@ sudo npm install -g yo
 
 #Autre
 sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner" && sudo apt-get update -qq
-sudo apt-get install tree chromium-browser thunderbird firefox subversion git git-svn vim gedit gedit-plugins meld dia skype gimp filezilla flashplugin-installer build-essential libreoffice ant finger wkhtmltopdf curl libxslt-dev libxml2-dev hwinfo tidy trash-cli lynx screen
+sudo apt-get install tree chromium-browser thunderbird firefox subversion git git-svn vim gedit gedit-plugins meld dia skype gimp filezilla flashplugin-installer build-essential libreoffice ant finger wkhtmltopdf curl libxslt-dev libxml2-dev hwinfo tidy trash-cli lynx screen unrar xubuntu-restricted-extras
 
 #Installation composer
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin
