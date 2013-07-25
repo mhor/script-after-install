@@ -31,6 +31,9 @@ sudo pear install --alldeps phpunit/PHPUnit
 sudo pear install pear.phpunit.de/PHPUnit_SkeletonGenerator
 
 sudo phpcs --config-set default_standard PSR2
+sudo su -c "echo \"xdebug.remote_enable=On\" >> /etc/php5/conf.d/20-xdebug.ini"
+
+
 
 #Apache
 sudo apt-get install apache2
