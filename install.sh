@@ -28,6 +28,7 @@ sudo pear install phpunit/PHP_CodeBrowser
 sudo pear install pear.phpunit.de/phploc
 sudo pear install phpdoc/phpDocumentor-alpha
 sudo pear install --alldeps phpunit/PHPUnit
+sudo pear install pear.phpunit.de/PHPUnit_SkeletonGenerator
 
 sudo phpcs --config-set default_standard PSR2
 
