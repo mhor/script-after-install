@@ -13,7 +13,7 @@ sudo add-apt-repository ppa:webupd8team/java sudo apt-get update
 sudo apt-get install oracle-java7-installer
 
 #PHP
-sudo apt-get install php5 zend-framework php-apc php5-curl php5-xdebug php5-common php5-gd php5-cli php5-xsl php5-pgsql php5-mcrypt php-pear
+sudo apt-get install php5 zend-framework php-apc php5-curl php5-xdebug php5-common php5-gd php5-cli php5-xsl php5-pgsql php5-mcrypt php-pear php5-intl
 
 sudo pear channel-discover pear.pdepend.org
 sudo pear channel-discover pear.phpmd.org
@@ -32,8 +32,6 @@ sudo pear install pear.phpunit.de/PHPUnit_SkeletonGenerator
 
 sudo phpcs --config-set default_standard PSR2
 sudo su -c "echo \"xdebug.remote_enable=On\" >> /etc/php5/conf.d/20-xdebug.ini"
-
-
 
 #Apache
 sudo apt-get install apache2
@@ -58,7 +56,7 @@ sudo npm install -g yo
 
 #Autre
 sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner" && sudo apt-get update -qq
-sudo apt-get install tree chromium-browser thunderbird firefox subversion git git-svn vim gedit gedit-plugins meld dia skype gimp filezilla flashplugin-installer build-essential libreoffice ant finger wkhtmltopdf curl libxslt-dev libxml2-dev hwinfo tidy trash-cli lynx screen unrar xubuntu-restricted-extras
+sudo apt-get install tree chromium-browser thunderbird firefox subversion git git-svn vim gedit gedit-plugins meld dia skype gimp filezilla flashplugin-installer build-essential libreoffice ant finger wkhtmltopdf curl libxslt-dev libxml2-dev hwinfo tidy trash-cli lynx screen unrar xubuntu-restricted-extras ssh
 
 #Installation composer
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin
