@@ -20,6 +20,8 @@ sudo pear channel-discover pear.phpmd.org
 sudo pear channel-discover pear.phpunit.de
 sudo pear channel-discover pear.phpdoc.org
 
+sudo pear config-set auto_discover 1
+
 sudo pear install pdepend/PHP_Depend-beta
 sudo pear install --alldeps phpmd/PHP_PMD
 sudo pear install PHP_CodeSniffer
@@ -29,6 +31,7 @@ sudo pear install pear.phpunit.de/phploc
 sudo pear install phpdoc/phpDocumentor-alpha
 sudo pear install --alldeps phpunit/PHPUnit
 sudo pear install pear.phpunit.de/PHPUnit_SkeletonGenerator
+sudo pear install pear.phpunit.de/phploc
 
 sudo phpcs --config-set default_standard PSR2
 sudo su -c "echo \"xdebug.remote_enable=On\" >> /etc/php5/conf.d/20-xdebug.ini"
