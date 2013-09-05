@@ -59,7 +59,7 @@ sudo npm install -g yo
 
 #Autre
 sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner" && sudo apt-get update -qq
-sudo apt-get install tree chromium-browser thunderbird firefox subversion git git-svn vim gedit gedit-plugins meld dia skype gimp filezilla flashplugin-installer build-essential libreoffice ant finger wkhtmltopdf curl libxslt-dev libxml2-dev hwinfo tidy trash-cli lynx screen unrar xubuntu-restricted-extras ssh chromium-codecs-ffmpeg-extra cdparanoia cd-discid lame xcfa flac libvorbis0a lame libmpcdec3 libspeex1
+sudo apt-get install tree chromium-browser thunderbird firefox subversion git git-svn vim gedit gedit-plugins meld dia skype gimp filezilla flashplugin-installer build-essential libreoffice ant finger wkhtmltopdf curl libxslt-dev libxml2-dev hwinfo tidy trash-cli lynx screen unrar xubuntu-restricted-extras ssh chromium-codecs-ffmpeg-extra cdparanoia cd-discid lame xcfa flac libvorbis0a lame libmpcdec3 libspeex1 id3 id3v2
 
 #Installation composer
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin
