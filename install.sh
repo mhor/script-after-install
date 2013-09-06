@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#Ajouter quelques repo PPA
+sudo add-apt-repository ppa:webupd8team/java
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo add-apt-repository ppa:shutter/ppa
+
 #Mettre a jours sa distrib
 sudo apt-get update
 sudo apt-get upgrade
@@ -9,7 +14,7 @@ sudo apt-get install postgresql postgresql-contrib postgresql-server-dev postgre
 
 #Installer Java
 sudo apt-get purge openjdk*
-sudo add-apt-repository ppa:webupd8team/java sudo apt-get update 
+
 sudo apt-get install oracle-java7-installer
 
 #PHP
@@ -52,14 +57,14 @@ sudo apt-get install exim4
 sudo apt-get install ruby1.8 rubygems
 
 # Installation Node Js
-sudo add-apt-repository ppa:chris-lea/node.js
-sudo apt-get update
 sudo apt-get install nodejs
 sudo npm install -g yo
 
 #Autre
 sudo add-apt-repository "deb http://archive.canonical.com/ $(lsb_release -sc) partner" && sudo apt-get update -qq
-sudo apt-get install tree chromium-browser thunderbird firefox subversion git git-svn vim gedit gedit-plugins meld dia skype gimp filezilla flashplugin-installer build-essential libreoffice ant finger wkhtmltopdf curl libxslt-dev libxml2-dev hwinfo tidy trash-cli lynx screen unrar xubuntu-restricted-extras ssh chromium-codecs-ffmpeg-extra cdparanoia cd-discid lame xcfa flac libvorbis0a lame libmpcdec3 libspeex1 id3 id3v2
+sudo apt-get install tree chromium-browser thunderbird firefox subversion git git-svn vim gedit gedit-plugins meld dia skype gimp filezilla flashplugin-installer build-essential libreoffice ant finger wkhtmltopdf curl libxslt-dev libxml2-dev hwinfo tidy trash-cli lynx screen unrar xubuntu-restricted-extras ssh chromium-codecs-ffmpeg-extra cdparanoia cd-discid lame xcfa flac libvorbis0a lame libspeex1 id3 id3v2 shutter
+
+sudo mv /usr/share/shutter/resources/system/plugins /usr/share/shutter/resources/system/plugins_disable
 
 #Installation composer
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin
