@@ -1,14 +1,13 @@
-Script After Install
-================
+#Script After Install
 
-#Introduction
-Script to launch after install (X|L|K)Ubuntu install
+##Introduction
+Script to launch after install **xubuntu** install
 
-#Installation
-To launch it:
+##Installation
+To run it:
 
 * Do a `chmod a+x` on install.sh
 * `sh install.sh`
 
-#Licence
+##License
 See `LICENSE` file
