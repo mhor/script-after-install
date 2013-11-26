@@ -1,13 +1,14 @@
 #Script After Install
 
-##Introduction
+###Introduction
 Script to launch after install **xubuntu** install
 
-##Installation
-To run it:
+###How to use:
 
-* Do a `chmod a+x` on install.sh
-* `sh install.sh`
+```bash
+chmod a+x install.sh
+sh install.sh`
+```
 
-##License
+###License
 See `LICENSE` file
