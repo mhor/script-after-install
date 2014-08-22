@@ -9,9 +9,6 @@ sudo add-apt-repository ppa:shutter/ppa
 sudo apt-get update
 sudo apt-get upgrade
 
-#Installer Postgresl
-sudo apt-get install postgresql postgresql-contrib postgresql-server-dev postgresql-client pgadmin3 postgresql-autodoc postgresql-client-common postgresql-common
-
 #Installer Java
 sudo apt-get purge openjdk*
 
@@ -50,9 +47,6 @@ sudo apt-get install mysql-server phpmyadmin mysql-workbench
 #Perl
 sudo apt-get install libxml-libxml-perl libdate-manip-perl libdbd-pg-perl
 
-# Serveur mail 
-sudo apt-get install exim4
-
 # Installation Ruby
 sudo apt-get install ruby1.8 rubygems
 
@@ -76,7 +70,3 @@ sudo a2enmod headers
 
 #Relancer tout les services
 sudo service apache2 restart
-sudo service postgresql restart
-
-#Créer un utilisateur Postgresql
-sudo su postgres -c"createuser mhor -sP"
